@@ -53,7 +53,7 @@
 
 		include "abrir_conexion.php";
 
-		//Codigo SQL para inserta datos en la tabla personas 
+		// Codigo SQL para insertar datos en la tabla personas 
 		$query = "INSERT INTO personas (DNI, Nombre, Direccion,Telefono) values ('$doc','$nombre','$dir','$tel')";
 		$exito = mysqli_query($conexion, $query);
 		
