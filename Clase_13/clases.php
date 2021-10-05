@@ -72,7 +72,7 @@
 
         public function __construct(Producto $producto, $cantidadSolicitada)
         {
-            $this->producto = 10;
+            $this->producto = $producto;
             $this->cantidadSolicitada = $cantidadSolicitada;
         }
 
