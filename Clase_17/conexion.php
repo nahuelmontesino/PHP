@@ -16,9 +16,9 @@
                 if (!self::$conexion) {
                     die("La conexion fallo: " . mysqli_connect_error());
                 }
-
-                return self::$conexion;
             }
+
+            return self::$conexion;
         }
     }
 ?>
