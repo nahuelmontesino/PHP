@@ -2,8 +2,8 @@
     class customException extends Exception {
         public function errorMessage() {
             //error message
-            $errorMsg = 'Error on line '.$this->getLine().' in '.$this->getFile()
-            .': <b>'.$this->getMessage().'</b> is not a valid E-Mail address';
+            $errorMsg = 'Error en linea '.$this->getLine().' en '.$this->getFile()
+            .': La direccion: <b>'.$this->getMessage().'</b> no es una direccion de email valida';
             return $errorMsg;
         }
     }
@@ -17,7 +17,7 @@
             throw new customException($email);
         }
 
-        //verifica que la palabra example este en el email
+        //verifica que la palabra example este en el email, en ese caso lanza una excepcion
         if(strpos($email, "example") !== FALSE) {
             throw new Exception("$email es un email tipo ejemplo");
         }
@@ -31,3 +31,4 @@
       echo $e->getMessage();
     }
 ?>
+

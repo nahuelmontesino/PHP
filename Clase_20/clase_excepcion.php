@@ -2,7 +2,8 @@
     class customException extends Exception {
         public function errorEmailMessage() {
             // Mensaje de error personalizado, utilizando el email que recibimos como parametro.
-            $errorMsg = 'Error '.': La direccion: <b>'.$this->getMessage().'</b> no es una direccion de email valida';
+            $errorMsg = 'Error en linea '.$this->getLine().' en '.$this->getFile()
+            .': La direccion: <b>'.$this->getMessage().'</b> no es una direccion de email valida';
             return $errorMsg;
         }
     }
@@ -24,3 +25,7 @@
         echo $e->errorEmailMessage();
     }
 ?>
+
+
+
+
