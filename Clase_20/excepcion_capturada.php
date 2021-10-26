@@ -6,7 +6,7 @@
         }
     }
 
-    //Lanzamos una excepcion en un bloque "try"
+    //En el bloque try verificamos si hay una excepcion 
     try {
         checkNum(2);
         //Si una excepcion es lanzada el siguiente codigo no se ejecuta, 
