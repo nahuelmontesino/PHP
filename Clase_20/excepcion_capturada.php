@@ -8,6 +8,7 @@
 
     //En el bloque try verificamos si hay una excepcion 
     try {
+        //Esta funcion lanzara un error ya que el numero es mayor a 1
         checkNum(2);
         //Si una excepcion es lanzada el siguiente codigo no se ejecuta, 
         //sino que pasa directo al bloque "catch"
